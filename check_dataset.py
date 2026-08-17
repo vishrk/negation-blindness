@@ -4,7 +4,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
-FIELDS = ("id", "domain", "negation_type", "statement", "negation", "paraphrase", "unrelated")
+FIELDS = ("id", "domain", "negation_type", "statement", "negation", "paraphrase", "unrelated", "question")
 
 items = json.loads(Path("data/negation_pairs.json").read_text(encoding="utf-8"))
 

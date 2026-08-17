@@ -1,0 +1,41 @@
+id,domain,question,sim_to_statement,sim_to_own_negation,top1_item_id,top1_kind,top1_is_correct,top1_is_own_negation
+geo-01,geography,Which direction does the Nile flow?,0.744,0.5845,geo-01,statement,True,False
+geo-02,geography,What is the highest peak on Earth?,0.7869,0.6835,geo-02,statement,True,False
+geo-03,geography,Is Australia in the Southern Hemisphere?,0.9087,0.7731,geo-03,statement,True,False
+geo-04,geography,Where does most of Russia's landmass lie?,0.8339,0.6227,geo-04,statement,True,False
+geo-05,geography,Is Tokyo Japan's largest city?,0.866,0.7917,geo-05,statement,True,False
+geo-06,geography,Is Greenland part of Denmark?,0.8641,0.7498,geo-06,statement,True,False
+geo-07,geography,Are sea levels rising along most coastlines?,0.9327,0.8504,geo-07,statement,True,False
+geo-08,geography,What oceans does the Panama Canal connect?,0.8834,0.6558,geo-08,statement,True,False
+med-01,medical,Does the patient have a penicillin allergy?,0.922,0.7417,med-01,statement,True,False
+med-02,medical,Does the chest X-ray show pneumonia?,0.9155,0.7931,med-02,statement,True,False
+med-03,medical,Should ibuprofen be avoided in the third trimester?,0.9451,0.9005,med-03,statement,True,False
+med-04,medical,Does this medication increase blood pressure?,0.9505,0.8924,med-04,statement,True,False
+med-05,medical,Is MRI safe for patients with a pacemaker?,0.8356,0.8425,med-05,negation,False,True
+med-06,medical,Were the biopsy results malignant?,0.926,0.797,med-06,statement,True,False
+med-07,medical,Should patients fast before the procedure?,0.8515,0.9162,med-07,negation,False,True
+med-08,medical,Is vaccination recommended for adults over 65?,0.9616,0.8352,med-08,statement,True,False
+law-01,legal,Can the tenant sublet the apartment?,0.9201,0.8491,law-01,statement,True,False
+law-02,legal,Can this agreement be terminated with 30 days notice?,0.9512,0.9412,law-02,statement,True,False
+law-03,legal,Is the contractor liable for subcontractor damages?,0.9544,0.854,law-03,statement,True,False
+law-04,legal,Was the defendant found guilty?,0.7597,0.7248,law-04,statement,True,False
+law-05,legal,Do employees have to sign a non-compete clause?,0.962,0.8739,law-05,statement,True,False
+law-06,legal,Are warranties excluded under this contract?,0.88,0.8714,law-06,statement,True,False
+law-07,legal,Does the patent claim cover software implementations?,0.9326,0.8178,law-07,statement,True,False
+law-08,legal,Can personal data be transferred outside the EEA?,0.9507,0.8933,law-08,statement,True,False
+fin-01,financial,Can the fund invest in derivatives?,0.8876,0.7252,fin-01,statement,True,False
+fin-02,financial,Did revenue grow year over year?,0.8158,0.7247,fin-02,statement,True,False
+fin-03,financial,Did the company report a profit in the fourth quarter?,0.9005,0.728,fin-03,statement,True,False
+fin-04,financial,Is this account covered by deposit insurance?,0.9474,0.8846,fin-04,statement,True,False
+fin-05,financial,Does the bond issue carry an investment-grade rating?,0.9577,0.7711,fin-05,statement,True,False
+fin-06,financial,Does early withdrawal from this plan incur a penalty?,0.9224,0.8574,fin-06,statement,True,False
+fin-07,financial,Does the transaction require regulatory approval?,0.8156,0.7324,fin-07,statement,True,False
+fin-08,financial,Is past performance a reliable guide to future returns?,0.9366,0.7609,fin-08,statement,True,False
+saf-01,safety,Can water be used to extinguish this fire?,0.9183,0.8445,saf-01,statement,True,False
+saf-02,safety,Must the equipment be grounded before operation?,0.9398,0.8849,saf-02,statement,True,False
+saf-03,safety,Can this solvent be used without ventilation?,0.7778,0.7617,saf-03,statement,True,False
+saf-04,safety,Should the power supply be disconnected before removing the cover?,0.7805,0.9145,saf-04,negation,False,True
+saf-05,safety,Is this product suitable for children under three?,0.9464,0.9309,saf-05,statement,True,False
+saf-06,safety,Can the battery be recharged?,0.7648,0.7257,saf-06,statement,True,False
+saf-07,safety,Is protective eyewear required in this area?,0.9365,0.8315,saf-07,statement,True,False
+saf-08,safety,How should people evacuate in case of fire?,0.6906,0.6756,saf-08,statement,True,False
