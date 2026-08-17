@@ -1,0 +1,41 @@
+id,question,baseline_correct,baseline_own_negation,reranked_correct,reranked_own_negation,flagged_ambiguous
+geo-01,Which direction does the Nile flow?,True,False,True,False,True
+geo-02,What is the highest peak on Earth?,True,False,True,False,True
+geo-03,Is Australia in the Southern Hemisphere?,True,False,True,False,True
+geo-04,Where does most of Russia's landmass lie?,True,False,True,False,True
+geo-05,Is Tokyo Japan's largest city?,True,False,True,False,True
+geo-06,Is Greenland part of Denmark?,True,False,True,False,True
+geo-07,Are sea levels rising along most coastlines?,True,False,True,False,True
+geo-08,What oceans does the Panama Canal connect?,True,False,True,False,True
+med-01,Does the patient have a penicillin allergy?,True,False,False,True,True
+med-02,Does the chest X-ray show pneumonia?,True,False,False,True,True
+med-03,Should ibuprofen be avoided in the third trimester?,True,False,True,False,True
+med-04,Does this medication increase blood pressure?,True,False,True,False,True
+med-05,Is MRI safe for patients with a pacemaker?,False,True,False,True,True
+med-06,Were the biopsy results malignant?,True,False,True,False,True
+med-07,Should patients fast before the procedure?,False,True,True,False,True
+med-08,Is vaccination recommended for adults over 65?,True,False,True,False,True
+law-01,Can the tenant sublet the apartment?,True,False,False,True,True
+law-02,Can this agreement be terminated with 30 days notice?,True,False,False,True,True
+law-03,Is the contractor liable for subcontractor damages?,True,False,False,True,True
+law-04,Was the defendant found guilty?,True,False,True,False,True
+law-05,Do employees have to sign a non-compete clause?,True,False,False,True,True
+law-06,Are warranties excluded under this contract?,True,False,False,True,True
+law-07,Does the patent claim cover software implementations?,True,False,False,True,True
+law-08,Can personal data be transferred outside the EEA?,True,False,False,True,True
+fin-01,Can the fund invest in derivatives?,True,False,False,True,True
+fin-02,Did revenue grow year over year?,True,False,False,True,True
+fin-03,Did the company report a profit in the fourth quarter?,True,False,True,False,True
+fin-04,Is this account covered by deposit insurance?,True,False,False,True,True
+fin-05,Does the bond issue carry an investment-grade rating?,True,False,False,True,True
+fin-06,Does early withdrawal from this plan incur a penalty?,True,False,False,True,True
+fin-07,Does the transaction require regulatory approval?,True,False,False,True,True
+fin-08,Is past performance a reliable guide to future returns?,True,False,True,False,True
+saf-01,Can water be used to extinguish this fire?,True,False,False,True,True
+saf-02,Must the equipment be grounded before operation?,True,False,True,False,True
+saf-03,Can this solvent be used without ventilation?,True,False,True,False,True
+saf-04,Should the power supply be disconnected before removing the cover?,False,True,False,True,True
+saf-05,Is this product suitable for children under three?,True,False,True,False,True
+saf-06,Can the battery be recharged?,True,False,False,True,True
+saf-07,Is protective eyewear required in this area?,True,False,False,True,True
+saf-08,How should people evacuate in case of fire?,True,False,True,False,True

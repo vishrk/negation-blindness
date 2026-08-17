@@ -1,0 +1,21 @@
+{
+  "bi_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "cross_encoder": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "rerank_k": 5,
+  "items": 40,
+  "baseline": {
+    "correct": 0.925,
+    "own_negation_retrieved": 0.075
+  },
+  "cross_encoder_reranked": {
+    "correct": 0.5,
+    "own_negation_retrieved": 0.5,
+    "fixed_a_baseline_failure": 1,
+    "broke_a_baseline_success": 18
+  },
+  "ambiguity_filter": {
+    "recall_on_baseline_failures": 1.0,
+    "false_positives_on_baseline_successes": 37,
+    "total_flagged": 40
+  }
+}
