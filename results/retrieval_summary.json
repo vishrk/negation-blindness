@@ -1,0 +1,9 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "items": 40,
+  "index_size": 80,
+  "pair_negation_wins": 0.075,
+  "full_index_top1_correct": 0.925,
+  "full_index_top1_own_negation": 0.075,
+  "full_index_top1_other_item": 0.0
+}

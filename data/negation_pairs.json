@@ -6,7 +6,8 @@
     "statement": "The Nile flows northward into the Mediterranean Sea.",
     "negation": "The Nile does not flow northward into the Mediterranean Sea.",
     "paraphrase": "The Nile river runs north and empties into the Mediterranean.",
-    "unrelated": "The Andes range extends along the western edge of South America."
+    "unrelated": "The Andes range extends along the western edge of South America.",
+    "question": "Which direction does the Nile flow?"
   },
   {
     "id": "geo-02",
@@ -15,7 +16,8 @@
     "statement": "Mount Everest is the highest peak on Earth.",
     "negation": "Mount Everest is the lowest peak on Earth.",
     "paraphrase": "No mountain on Earth rises higher than Everest.",
-    "unrelated": "The Sahara covers much of northern Africa."
+    "unrelated": "The Sahara covers much of northern Africa.",
+    "question": "What is the highest peak on Earth?"
   },
   {
     "id": "geo-03",
@@ -24,7 +26,8 @@
     "statement": "Australia is located in the Southern Hemisphere.",
     "negation": "Australia is not located in the Southern Hemisphere.",
     "paraphrase": "Australia lies south of the equator.",
-    "unrelated": "Iceland sits near the Arctic Circle in the North Atlantic."
+    "unrelated": "Iceland sits near the Arctic Circle in the North Atlantic.",
+    "question": "Is Australia in the Southern Hemisphere?"
   },
   {
     "id": "geo-04",
@@ -33,7 +36,8 @@
     "statement": "Most of Russia's landmass lies within Asia.",
     "negation": "None of Russia's landmass lies within Asia.",
     "paraphrase": "The majority of Russian territory is in Asia.",
-    "unrelated": "Brazil is the largest country in South America by area."
+    "unrelated": "Brazil is the largest country in South America by area.",
+    "question": "Where does most of Russia's landmass lie?"
   },
   {
     "id": "geo-05",
@@ -42,7 +46,8 @@
     "statement": "Tokyo is the capital of Japan and its largest city.",
     "negation": "Tokyo is the capital of Japan but not its largest city.",
     "paraphrase": "Japan's capital, Tokyo, is also the country's most populous city.",
-    "unrelated": "Seoul lies on the Han River in South Korea."
+    "unrelated": "Seoul lies on the Han River in South Korea.",
+    "question": "Is Tokyo Japan's largest city?"
   },
   {
     "id": "geo-06",
@@ -51,7 +56,8 @@
     "statement": "Greenland is an autonomous territory of Denmark.",
     "negation": "Greenland is not an autonomous territory of Denmark.",
     "paraphrase": "Denmark holds sovereignty over the self-governing territory of Greenland.",
-    "unrelated": "Norway shares a long land border with Sweden."
+    "unrelated": "Norway shares a long land border with Sweden.",
+    "question": "Is Greenland part of Denmark?"
   },
   {
     "id": "geo-07",
@@ -60,7 +66,8 @@
     "statement": "Sea levels are rising along most coastlines.",
     "negation": "Sea levels are falling along most coastlines.",
     "paraphrase": "Coastal sea levels are increasing in most parts of the world.",
-    "unrelated": "Volcanic activity is concentrated around the Pacific Ring of Fire."
+    "unrelated": "Volcanic activity is concentrated around the Pacific Ring of Fire.",
+    "question": "Are sea levels rising along most coastlines?"
   },
   {
     "id": "geo-08",
@@ -69,7 +76,8 @@
     "statement": "The Panama Canal connects the Atlantic and Pacific Oceans.",
     "negation": "The Panama Canal does not connect the Atlantic and Pacific Oceans.",
     "paraphrase": "Ships pass between the Atlantic and the Pacific via the Panama Canal.",
-    "unrelated": "The Suez Canal cuts through Egypt to link the Mediterranean and the Red Sea."
+    "unrelated": "The Suez Canal cuts through Egypt to link the Mediterranean and the Red Sea.",
+    "question": "What oceans does the Panama Canal connect?"
   },
   {
     "id": "med-01",
@@ -78,7 +86,8 @@
     "statement": "The patient has a documented allergy to penicillin.",
     "negation": "The patient has no documented allergy to penicillin.",
     "paraphrase": "Penicillin allergy is recorded in the patient's chart.",
-    "unrelated": "The patient reports intermittent lower back pain for three weeks."
+    "unrelated": "The patient reports intermittent lower back pain for three weeks.",
+    "question": "Does the patient have a penicillin allergy?"
   },
   {
     "id": "med-02",
@@ -87,7 +96,8 @@
     "statement": "Chest X-ray shows evidence of pneumonia.",
     "negation": "Chest X-ray shows no evidence of pneumonia.",
     "paraphrase": "The chest radiograph is consistent with pneumonia.",
-    "unrelated": "An abdominal ultrasound was ordered for the following morning."
+    "unrelated": "An abdominal ultrasound was ordered for the following morning.",
+    "question": "Does the chest X-ray show pneumonia?"
   },
   {
     "id": "med-03",
@@ -96,7 +106,8 @@
     "statement": "Ibuprofen should be avoided during the third trimester of pregnancy.",
     "negation": "Ibuprofen does not need to be avoided during the third trimester of pregnancy.",
     "paraphrase": "Third-trimester patients are advised against taking ibuprofen.",
-    "unrelated": "Prenatal vitamins typically contain folic acid and iron."
+    "unrelated": "Prenatal vitamins typically contain folic acid and iron.",
+    "question": "Should ibuprofen be avoided in the third trimester?"
   },
   {
     "id": "med-04",
@@ -105,7 +116,8 @@
     "statement": "This medication increases blood pressure.",
     "negation": "This medication decreases blood pressure.",
     "paraphrase": "Blood pressure rises in patients taking this medication.",
-    "unrelated": "The tablets should be stored below 25 degrees Celsius."
+    "unrelated": "The tablets should be stored below 25 degrees Celsius.",
+    "question": "Does this medication increase blood pressure?"
   },
   {
     "id": "med-05",
@@ -114,7 +126,8 @@
     "statement": "MRI is contraindicated for patients with a pacemaker.",
     "negation": "MRI is not contraindicated for patients with a pacemaker.",
     "paraphrase": "Patients fitted with a pacemaker should not undergo MRI.",
-    "unrelated": "CT scans expose the patient to ionizing radiation."
+    "unrelated": "CT scans expose the patient to ionizing radiation.",
+    "question": "Is MRI safe for patients with a pacemaker?"
   },
   {
     "id": "med-06",
@@ -123,7 +136,8 @@
     "statement": "The biopsy results were malignant.",
     "negation": "The biopsy results were benign.",
     "paraphrase": "The tissue sample was found to be cancerous.",
-    "unrelated": "The patient was discharged with a follow-up appointment in six weeks."
+    "unrelated": "The patient was discharged with a follow-up appointment in six weeks.",
+    "question": "Were the biopsy results malignant?"
   },
   {
     "id": "med-07",
@@ -132,7 +146,8 @@
     "statement": "Patients should fast for eight hours before the procedure.",
     "negation": "Patients should not fast before the procedure.",
     "paraphrase": "No food or drink for eight hours prior to the procedure.",
-    "unrelated": "The procedure is typically performed under local anesthetic."
+    "unrelated": "The procedure is typically performed under local anesthetic.",
+    "question": "Should patients fast before the procedure?"
   },
   {
     "id": "med-08",
@@ -141,7 +156,8 @@
     "statement": "Vaccination is recommended for adults over 65.",
     "negation": "Vaccination is not recommended for adults over 65.",
     "paraphrase": "Adults aged 65 and older should receive the vaccine.",
-    "unrelated": "Annual eye examinations are advised for patients with diabetes."
+    "unrelated": "Annual eye examinations are advised for patients with diabetes.",
+    "question": "Is vaccination recommended for adults over 65?"
   },
   {
     "id": "law-01",
@@ -150,7 +166,8 @@
     "statement": "The tenant is permitted to sublet the apartment.",
     "negation": "The tenant is not permitted to sublet the apartment.",
     "paraphrase": "Subletting the apartment is allowed for the tenant.",
-    "unrelated": "The lease term begins on the first day of the month."
+    "unrelated": "The lease term begins on the first day of the month.",
+    "question": "Can the tenant sublet the apartment?"
   },
   {
     "id": "law-02",
@@ -159,7 +176,8 @@
     "statement": "This agreement may be terminated with 30 days written notice.",
     "negation": "This agreement may not be terminated with 30 days written notice.",
     "paraphrase": "Either party may end this agreement by giving 30 days notice in writing.",
-    "unrelated": "Disputes under this agreement are governed by the laws of Delaware."
+    "unrelated": "Disputes under this agreement are governed by the laws of Delaware.",
+    "question": "Can this agreement be terminated with 30 days notice?"
   },
   {
     "id": "law-03",
@@ -168,7 +186,8 @@
     "statement": "The contractor is liable for damages caused by subcontractors.",
     "negation": "The contractor is not liable for damages caused by subcontractors.",
     "paraphrase": "Responsibility for subcontractor damage rests with the contractor.",
-    "unrelated": "Invoices are payable within 45 days of receipt."
+    "unrelated": "Invoices are payable within 45 days of receipt.",
+    "question": "Is the contractor liable for subcontractor damages?"
   },
   {
     "id": "law-04",
@@ -177,7 +196,8 @@
     "statement": "The defendant was found guilty on all counts.",
     "negation": "The defendant was found not guilty on all counts.",
     "paraphrase": "The jury convicted the defendant on every charge.",
-    "unrelated": "The hearing was scheduled for the following Tuesday."
+    "unrelated": "The hearing was scheduled for the following Tuesday.",
+    "question": "Was the defendant found guilty?"
   },
   {
     "id": "law-05",
@@ -186,7 +206,8 @@
     "statement": "Employees are required to sign a non-compete clause.",
     "negation": "Employees are not required to sign a non-compete clause.",
     "paraphrase": "A non-compete clause must be signed by all employees.",
-    "unrelated": "The company offers 20 days of paid annual leave."
+    "unrelated": "The company offers 20 days of paid annual leave.",
+    "question": "Do employees have to sign a non-compete clause?"
   },
   {
     "id": "law-06",
@@ -195,7 +216,8 @@
     "statement": "All warranties are excluded under this contract.",
     "negation": "No warranties are excluded under this contract.",
     "paraphrase": "This contract excludes every warranty.",
-    "unrelated": "The contract was executed in two counterparts."
+    "unrelated": "The contract was executed in two counterparts.",
+    "question": "Are warranties excluded under this contract?"
   },
   {
     "id": "law-07",
@@ -204,7 +226,8 @@
     "statement": "The patent claim covers software implementations.",
     "negation": "The patent claim does not cover software implementations.",
     "paraphrase": "Software implementations fall within the scope of the patent claim.",
-    "unrelated": "The trademark was registered in the European Union in 2019."
+    "unrelated": "The trademark was registered in the European Union in 2019.",
+    "question": "Does the patent claim cover software implementations?"
   },
   {
     "id": "law-08",
@@ -213,7 +236,8 @@
     "statement": "Personal data may be transferred outside the EEA.",
     "negation": "Personal data may not be transferred outside the EEA.",
     "paraphrase": "Transfers of personal data beyond the EEA are permitted.",
-    "unrelated": "The privacy policy was last updated in January."
+    "unrelated": "The privacy policy was last updated in January.",
+    "question": "Can personal data be transferred outside the EEA?"
   },
   {
     "id": "fin-01",
@@ -222,7 +246,8 @@
     "statement": "The fund is permitted to invest in derivatives.",
     "negation": "The fund is not permitted to invest in derivatives.",
     "paraphrase": "Derivative investments are allowed within the fund's mandate.",
-    "unrelated": "The fund reports its net asset value on a daily basis."
+    "unrelated": "The fund reports its net asset value on a daily basis.",
+    "question": "Can the fund invest in derivatives?"
   },
   {
     "id": "fin-02",
@@ -231,7 +256,8 @@
     "statement": "Revenue grew by 12 percent year over year.",
     "negation": "Revenue did not grow year over year.",
     "paraphrase": "Year-over-year revenue was up 12 percent.",
-    "unrelated": "The company opened a new distribution center in Ohio."
+    "unrelated": "The company opened a new distribution center in Ohio.",
+    "question": "Did revenue grow year over year?"
   },
   {
     "id": "fin-03",
@@ -240,7 +266,8 @@
     "statement": "The company reported a profit in the fourth quarter.",
     "negation": "The company reported a loss in the fourth quarter.",
     "paraphrase": "Fourth quarter results showed the company in the black.",
-    "unrelated": "The board appointed a new chief technology officer."
+    "unrelated": "The board appointed a new chief technology officer.",
+    "question": "Did the company report a profit in the fourth quarter?"
   },
   {
     "id": "fin-04",
@@ -249,7 +276,8 @@
     "statement": "This account is covered by deposit insurance.",
     "negation": "This account is not covered by deposit insurance.",
     "paraphrase": "Deposit insurance protects the funds in this account.",
-    "unrelated": "Interest is credited to the account on the last business day of each month."
+    "unrelated": "Interest is credited to the account on the last business day of each month.",
+    "question": "Is this account covered by deposit insurance?"
   },
   {
     "id": "fin-05",
@@ -258,7 +286,8 @@
     "statement": "The bond issue carries an investment-grade rating.",
     "negation": "The bond issue does not carry an investment-grade rating.",
     "paraphrase": "Rating agencies assigned the bond issue investment-grade status.",
-    "unrelated": "The bonds mature in ten years."
+    "unrelated": "The bonds mature in ten years.",
+    "question": "Does the bond issue carry an investment-grade rating?"
   },
   {
     "id": "fin-06",
@@ -267,7 +296,8 @@
     "statement": "Early withdrawal from this plan incurs a penalty.",
     "negation": "Early withdrawal from this plan does not incur a penalty.",
     "paraphrase": "A penalty applies if funds are withdrawn from the plan early.",
-    "unrelated": "Contributions to the plan are capped annually."
+    "unrelated": "Contributions to the plan are capped annually.",
+    "question": "Does early withdrawal from this plan incur a penalty?"
   },
   {
     "id": "fin-07",
@@ -276,7 +306,8 @@
     "statement": "The transaction requires approval from the regulator.",
     "negation": "The transaction does not require approval from the regulator.",
     "paraphrase": "Regulatory approval must be obtained before the transaction closes.",
-    "unrelated": "The acquisition was announced in a press release on Monday."
+    "unrelated": "The acquisition was announced in a press release on Monday.",
+    "question": "Does the transaction require regulatory approval?"
   },
   {
     "id": "fin-08",
@@ -285,7 +316,8 @@
     "statement": "Past performance is a reliable guide to future returns.",
     "negation": "Past performance is not a reliable guide to future returns.",
     "paraphrase": "Future returns can be predicted from past performance.",
-    "unrelated": "The portfolio is rebalanced quarterly."
+    "unrelated": "The portfolio is rebalanced quarterly.",
+    "question": "Is past performance a reliable guide to future returns?"
   },
   {
     "id": "saf-01",
@@ -294,7 +326,8 @@
     "statement": "Water may be used to extinguish this fire.",
     "negation": "Water must not be used to extinguish this fire.",
     "paraphrase": "This fire can be put out with water.",
-    "unrelated": "Fire extinguishers should be inspected annually."
+    "unrelated": "Fire extinguishers should be inspected annually.",
+    "question": "Can water be used to extinguish this fire?"
   },
   {
     "id": "saf-02",
@@ -303,7 +336,8 @@
     "statement": "The equipment must be grounded before operation.",
     "negation": "The equipment does not need to be grounded before operation.",
     "paraphrase": "Ground the equipment prior to use.",
-    "unrelated": "Operating instructions are printed on the side panel."
+    "unrelated": "Operating instructions are printed on the side panel.",
+    "question": "Must the equipment be grounded before operation?"
   },
   {
     "id": "saf-03",
@@ -312,7 +346,8 @@
     "statement": "This solvent must only be used in a well-ventilated area.",
     "negation": "This solvent may be used in a poorly ventilated area.",
     "paraphrase": "Use this solvent only where there is adequate ventilation.",
-    "unrelated": "The container holds five liters."
+    "unrelated": "The container holds five liters.",
+    "question": "Can this solvent be used without ventilation?"
   },
   {
     "id": "saf-04",
@@ -321,7 +356,8 @@
     "statement": "Disconnect the power supply before removing the cover.",
     "negation": "Do not disconnect the power supply before removing the cover.",
     "paraphrase": "Remove the cover only after the power supply has been disconnected.",
-    "unrelated": "Replacement covers are available from the manufacturer."
+    "unrelated": "Replacement covers are available from the manufacturer.",
+    "question": "Should the power supply be disconnected before removing the cover?"
   },
   {
     "id": "saf-05",
@@ -330,7 +366,8 @@
     "statement": "This product is suitable for children under three.",
     "negation": "This product is not suitable for children under three.",
     "paraphrase": "Children under three can safely use this product.",
-    "unrelated": "The packaging is made from recycled cardboard."
+    "unrelated": "The packaging is made from recycled cardboard.",
+    "question": "Is this product suitable for children under three?"
   },
   {
     "id": "saf-06",
@@ -339,7 +376,8 @@
     "statement": "The battery can be recharged.",
     "negation": "The battery cannot be recharged.",
     "paraphrase": "This is a rechargeable battery.",
-    "unrelated": "The battery provides up to eight hours of runtime."
+    "unrelated": "The battery provides up to eight hours of runtime.",
+    "question": "Can the battery be recharged?"
   },
   {
     "id": "saf-07",
@@ -348,7 +386,8 @@
     "statement": "Protective eyewear is required in this area.",
     "negation": "Protective eyewear is not required in this area.",
     "paraphrase": "Eye protection must be worn in this area.",
-    "unrelated": "The workshop closes at six in the evening."
+    "unrelated": "The workshop closes at six in the evening.",
+    "question": "Is protective eyewear required in this area?"
   },
   {
     "id": "saf-08",
@@ -357,6 +396,7 @@
     "statement": "In case of fire, evacuate using the stairs.",
     "negation": "In case of fire, do not evacuate using the stairs.",
     "paraphrase": "Use the staircase to leave the building during a fire.",
-    "unrelated": "Emergency exits are marked with illuminated signs."
+    "unrelated": "Emergency exits are marked with illuminated signs.",
+    "question": "How should people evacuate in case of fire?"
   }
 ]
