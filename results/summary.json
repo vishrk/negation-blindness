@@ -1,0 +1,56 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "items": 40,
+  "retrieval_threshold": 0.8,
+  "similarity": {
+    "negation": {
+      "mean": 0.8516,
+      "median": 0.8628,
+      "min": 0.6289,
+      "max": 0.9718
+    },
+    "paraphrase": {
+      "mean": 0.8381,
+      "median": 0.8632,
+      "min": 0.5832,
+      "max": 0.9566
+    },
+    "unrelated": {
+      "mean": 0.2888,
+      "median": 0.2681,
+      "min": 0.0047,
+      "max": 0.6033
+    }
+  },
+  "negation_beats_paraphrase": 0.575,
+  "negation_above_threshold": 0.75,
+  "paraphrase_above_threshold": 0.8,
+  "unrelated_above_threshold": 0.0,
+  "mean_by_domain": {
+    "financial": {
+      "negation": 0.7902,
+      "paraphrase": 0.8115,
+      "unrelated": 0.3193
+    },
+    "geography": {
+      "negation": 0.8164,
+      "paraphrase": 0.8404,
+      "unrelated": 0.2963
+    },
+    "legal": {
+      "negation": 0.8916,
+      "paraphrase": 0.871,
+      "unrelated": 0.2732
+    },
+    "medical": {
+      "negation": 0.8738,
+      "paraphrase": 0.8089,
+      "unrelated": 0.2557
+    },
+    "safety": {
+      "negation": 0.8861,
+      "paraphrase": 0.8586,
+      "unrelated": 0.2993
+    }
+  }
+}
