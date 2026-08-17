@@ -19,6 +19,15 @@ def load_items():
     return json.loads(Path("data/negation_pairs.json").read_text(encoding="utf-8"))
 
 
+def build_index(items):
+    """One document per statement and per negation in the dataset."""
+    docs = []
+    for item in items:
+        docs.append({"item_id": item["id"], "domain": item["domain"], "kind": "statement", "text": item["statement"]})
+        docs.append({"item_id": item["id"], "domain": item["domain"], "kind": "negation", "text": item["negation"]})
+    return docs
+
+
 def score_model(model_name, items):
     """Embed every item with model_name and return (rows, summary)."""
     texts = [item[field] for item in items for field in ("statement", *CONDITIONS)]

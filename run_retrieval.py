@@ -15,17 +15,12 @@ import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-from metrics import load_items
+from metrics import build_index, load_items
 
 MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 items = load_items()
-
-# The index: every statement and every negation in the dataset, as separate documents.
-docs = []
-for item in items:
-    docs.append({"item_id": item["id"], "domain": item["domain"], "kind": "statement", "text": item["statement"]})
-    docs.append({"item_id": item["id"], "domain": item["domain"], "kind": "negation", "text": item["negation"]})
+docs = build_index(items)
 
 model = SentenceTransformer(MODEL)
 doc_embeddings = model.encode([doc["text"] for doc in docs], normalize_embeddings=True, batch_size=32)
