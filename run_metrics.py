@@ -9,70 +9,20 @@ Writes results/similarities.csv (per item) and results/summary.json (aggregates)
 
 import csv
 import json
-import statistics
 from pathlib import Path
 
-from sentence_transformers import SentenceTransformer
+from metrics import CONDITIONS, RETRIEVAL_THRESHOLD, load_items, score_model
 
 MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-CONDITIONS = ("negation", "paraphrase", "unrelated")
-# A cutoff in the range commonly used to decide "relevant enough to retrieve".
-RETRIEVAL_THRESHOLD = 0.8
 
-items = json.loads(Path("data/negation_pairs.json").read_text(encoding="utf-8"))
-
-# One batch, so every text is embedded under identical conditions.
-texts = [item[field] for item in items for field in ("statement", *CONDITIONS)]
-model = SentenceTransformer(MODEL)
-embeddings = model.encode(texts, normalize_embeddings=True, batch_size=32)
-
-rows = []
-for index, item in enumerate(items):
-    statement, *others = embeddings[index * 4 : index * 4 + 4]
-    row = {"id": item["id"], "domain": item["domain"], "negation_type": item["negation_type"]}
-    # Embeddings are normalized, so the dot product is the cosine similarity.
-    row.update({name: float(statement @ other) for name, other in zip(CONDITIONS, others)})
-    rows.append(row)
+items = load_items()
+rows, summary = score_model(MODEL, items)
 
 Path("results").mkdir(exist_ok=True)
 with open("results/similarities.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.DictWriter(file, fieldnames=list(rows[0]))
     writer.writeheader()
     writer.writerows(rows)
-
-
-def summarize(values):
-    return {
-        "mean": round(statistics.mean(values), 4),
-        "median": round(statistics.median(values), 4),
-        "min": round(min(values), 4),
-        "max": round(max(values), 4),
-    }
-
-
-def share(predicate):
-    return round(sum(predicate(row) for row in rows) / len(rows), 4)
-
-
-summary = {
-    "model": MODEL,
-    "items": len(rows),
-    "retrieval_threshold": RETRIEVAL_THRESHOLD,
-    "similarity": {name: summarize([row[name] for row in rows]) for name in CONDITIONS},
-    "negation_beats_paraphrase": share(lambda row: row["negation"] > row["paraphrase"]),
-    "negation_above_threshold": share(lambda row: row["negation"] >= RETRIEVAL_THRESHOLD),
-    "paraphrase_above_threshold": share(lambda row: row["paraphrase"] >= RETRIEVAL_THRESHOLD),
-    "unrelated_above_threshold": share(lambda row: row["unrelated"] >= RETRIEVAL_THRESHOLD),
-    "mean_by_domain": {
-        domain: {
-            name: round(
-                statistics.mean([r[name] for r in rows if r["domain"] == domain]), 4
-            )
-            for name in CONDITIONS
-        }
-        for domain in sorted({row["domain"] for row in rows})
-    },
-}
 Path("results/summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
 
 print(f"model: {MODEL}   items: {len(rows)}\n")

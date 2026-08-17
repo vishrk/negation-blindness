@@ -1,0 +1,42 @@
+[
+  {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "negation_mean": 0.8516,
+    "paraphrase_mean": 0.8381,
+    "unrelated_mean": 0.2888,
+    "negation_beats_paraphrase": 0.575,
+    "negation_above_threshold": 0.75
+  },
+  {
+    "model": "sentence-transformers/all-mpnet-base-v2",
+    "negation_mean": 0.7962,
+    "paraphrase_mean": 0.8719,
+    "unrelated_mean": 0.3208,
+    "negation_beats_paraphrase": 0.25,
+    "negation_above_threshold": 0.525
+  },
+  {
+    "model": "BAAI/bge-base-en-v1.5",
+    "negation_mean": 0.8498,
+    "paraphrase_mean": 0.903,
+    "unrelated_mean": 0.6096,
+    "negation_beats_paraphrase": 0.175,
+    "negation_above_threshold": 0.875
+  },
+  {
+    "model": "intfloat/e5-base-v2",
+    "negation_mean": 0.9279,
+    "paraphrase_mean": 0.946,
+    "unrelated_mean": 0.7955,
+    "negation_beats_paraphrase": 0.25,
+    "negation_above_threshold": 1.0
+  },
+  {
+    "model": "thenlper/gte-base",
+    "negation_mean": 0.9481,
+    "paraphrase_mean": 0.9565,
+    "unrelated_mean": 0.8149,
+    "negation_beats_paraphrase": 0.45,
+    "negation_above_threshold": 1.0
+  }
+]

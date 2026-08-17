@@ -1,0 +1,6 @@
+model,negation_mean,paraphrase_mean,unrelated_mean,negation_beats_paraphrase,negation_above_threshold
+sentence-transformers/all-MiniLM-L6-v2,0.8516,0.8381,0.2888,0.575,0.75
+sentence-transformers/all-mpnet-base-v2,0.7962,0.8719,0.3208,0.25,0.525
+BAAI/bge-base-en-v1.5,0.8498,0.903,0.6096,0.175,0.875
+intfloat/e5-base-v2,0.9279,0.946,0.7955,0.25,1.0
+thenlper/gte-base,0.9481,0.9565,0.8149,0.45,1.0
