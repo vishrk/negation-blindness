@@ -10,6 +10,11 @@ with the query or contradicts it.
 Every number below is produced by a script in this repo. Run `pip install -r
 requirements.txt` and re-run any of them yourself — see [Reproducing](#reproducing).
 
+**The whole pipeline, end to end** — embedding similarity → real retrieval → the
+two mitigations that don't fix it:
+
+![Pipeline: embedding similarity finds negation and paraphrase equally close, retrieval fails on 7.5% of queries, and neither cross-encoder reranking nor an ambiguity filter closes the gap](results/negation_pipeline.png)
+
 ## The finding
 
 Across 40 hand-written statement/negation/paraphrase/unrelated groups spanning
@@ -104,6 +109,8 @@ wrong answer share a modal verb.
 reranker that scores the query and document jointly instead of comparing two
 separately-computed vectors:
 
+![Cross-encoder reranking cuts accuracy from 92.5% to 50%](results/mitigations_chart.png)
+
 ```
                        correct   own negation
 baseline                 92.5%           7.5%
@@ -191,6 +198,7 @@ python run_multi_model.py    # same dataset, 5 models -> results/model_compariso
 python run_retrieval.py      # 80-doc retrieval simulation -> results/retrieval_summary.json
 python run_mitigations.py    # cross-encoder + ambiguity filter -> results/mitigations_summary.json
 python generate_chart.py     # results/chart.png, results/chart.svg
+python generate_mitigations_chart.py  # results/mitigations_chart.png, results/mitigations_chart.svg
 ```
 
 Everything runs locally on CPU with `sentence-transformers` — no API keys
@@ -208,6 +216,7 @@ run_multi_model.py         Phase 4: multi-model comparison
 run_retrieval.py           Phase 5: retrieval simulation over a shared index
 run_mitigations.py         Phase 6: cross-encoder rerank + ambiguity filter
 generate_chart.py          Phase 7: the hero chart
+generate_mitigations_chart.py  Phase 7: the reranker regression chart
 results/                   every script's committed output (csv/json/png/svg)
 ```
 
